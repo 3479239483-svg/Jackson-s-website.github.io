@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>青丝 · 质感剪发 | 首页</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* 首页专用样式 */
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            background: linear-gradient(180deg, #fff 0%, #faf9f7 100%);
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 350;
+            letter-spacing: 6px;
+            margin-bottom: 1rem;
+        }
+        
+        .hero-divider {
+            width: 60px;
+            height: 2px;
+            background: #b69b7c;
+            margin: 2rem auto;
+        }
+        
+        .hero p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .feature h3 {
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+        }
+        
+        .feature p {
+            color: #999;
+            font-size: 0.9rem;
+        }
+        
+        .recent-works {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin: 2rem 0 3rem;
+        }
+        
+        .work-item {
+            aspect-ratio: 1;
+            background: #e8e0d5;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #b69b7c;
+            font-size: 2rem;
+        }
+        
+        @media (max-width: 900px) {
+            .features {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .recent-works {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">青<span>丝</span></a>
+            <div class="nav-links">
+                <a href="index.html" class="active">首页</a>
+                <a href="works.html">作品</a>
+                <a href="price.html">价格</a>
+                <a href="booking.html">预约</a>
+                <a href="contact.html">联系</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="hero">
+        <h1>青 · 丝</h1>
+        <div class="hero-divider"></div>
+        <p>每一刀，都是对美的一次重新理解</p>
+        <a href="booking.html" class="btn">立即预约</a>
+    </div>
+    
+    <div class="container">
+        <h2 class="page-title">为什么选择我们</h2>
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">✂️</div>
+                <h3>十年经验</h3>
+                <p>主理人从业十年，服务超过5000位客人</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">💆‍♀️</div>
+                <h3>一对一沟通</h3>
+                <p>剪发前充分沟通，确保理解你的需求</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🌿</div>
+                <h3>进口产品</h3>
+                <p>采用日本/欧洲进口护发产品</p>
+            </div>
+        </div>
+        
+        <h2 class="page-title">近期作品</h2>
+        <div class="recent-works">
+            <div class="work-item">✂️</div>
+            <div class="work-item">💇‍♀️</div>
+            <div class="work-item">🎨</div>
+            <div class="work-item">✨</div>
+        </div>
+        <div style="text-align: center; margin: 2rem 0;">
+            <a href="works.html" class="btn btn-outline">查看更多作品</a>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        © 2026 青丝 · 质感剪发 · 预约制工作室
+    </footer>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品集 · 青丝</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .works-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .work-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+            transition: 0.3s;
+        }
+        
+        .work-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+        }
+        
+        .work-image {
+            width: 100%;
+            aspect-ratio: 1;
+            background: #e8e0d5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #b69b7c;
+        }
+        
+        .work-info {
+            padding: 1.5rem;
+        }
+        
+        .work-info h3 {
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+        }
+        
+        .work-info p {
+            color: #b69b7c;
+            font-size: 0.9rem;
+        }
+        
+        .work-tags {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        
+        .tag {
+            background: #f0eeea;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: #666;
+        }
+        
+        @media (max-width: 900px) {
+            .works-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .works-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">青<span>丝</span></a>
+            <div class="nav-links">
+                <a href="index.html">首页</a>
+                <a href="works.html" class="active">作品</a>
+                <a href="price.html">价格</a>
+                <a href="booking.html">预约</a>
+                <a href="contact.html">联系</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h1 class="page-title">作品集</h1>
+        <div class="page-subtitle">RECENT WORKS</div>
+        
+        <div class="works-grid">
+            <div class="work-card">
+                <div class="work-image">✂️</div>
+                <div class="work-info">
+                    <h3>质感短发修剪</h3>
+                    <p>剪发 · 造型</p>
+                    <div class="work-tags">
+                        <span class="tag">短发</span>
+                        <span class="tag">日常</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="work-card">
+                <div class="work-image">🎨</div>
+                <div class="work-info">
+                    <h3>冷棕色系染发</h3>
+                    <p>染发 · 全染</p>
+                    <div class="work-tags">
+                        <span class="tag">冷色</span>
+                        <span class="tag">显白</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="work-card">
+                <div class="work-image">💇‍♀️</div>
+                <div class="work-info">
+                    <h3>慵懒卷烫发</h3>
+                    <p>烫发 · 纹理</p>
+                    <div class="work-tags">
+                        <span class="tag">卷发</span>
+                        <span class="tag">中长发</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="work-card">
+                <div class="work-image">✨</div>
+                <div class="work-info">
+                    <h3>男士雕刻</h3>
+                    <p>剪发 · 造型</p>
+                    <div class="work-tags">
+                        <span class="tag">男士</span>
+                        <span class="tag">硬朗</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="work-card">
+                <div class="work-image">💆‍♂️</div>
+                <div class="work-info">
+                    <h3>护理修护</h3>
+                    <p>深层护理</p>
+                    <div class="work-tags">
+                        <span class="tag">修护</span>
+                        <span class="tag">受损发质</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="work-card">
+                <div class="work-image">🌟</div>
+                <div class="work-info">
+                    <h3>新娘造型</h3>
+                    <p>盘发 · 造型</p>
+                    <div class="work-tags">
+                        <span class="tag">婚礼</span>
+                        <span class="tag">精致</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        © 2026 青丝 · 质感剪发 · 预约制工作室
+    </footer>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 · 青丝</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin: 3rem 0;
+        }
+        
+        .contact-info {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+        }
+        
+        .contact-item {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #f0eeea;
+        }
+        
+        .contact-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        
+        .contact-item h3 {
+            font-weight: 400;
+            color: #b69b7c;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-item p {
+            color: #666;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+        
+        .contact-item .small {
+            font-size: 0.9rem;
+            color: #999;
+        }
+        
+        .map-placeholder {
+            background: #e8e0d5;
+            height: 300px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #b69b7c;
+            font-size: 1rem;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: #f0eeea;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #1a1a1a;
+            transition: 0.2s;
+        }
+        
+        .social-link:hover {
+            background: #b69b7c;
+            color: white;
+        }
+        
+        @media (max-width: 700px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">青<span>丝</span></a>
+            <div class="nav-links">
+                <a href="index.html">首页</a>
+                <a href="works.html">作品</a>
+                <a href="price.html">价格</a>
+                <a href="booking.html">预约</a>
+                <a href="contact.html" class="active">联系</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h1 class="page-title">联系我们</h1>
+        <div class="page-subtitle">CONTACT</div>
+        
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>📍 地址</h3>
+                    <p>上海市静安区南京西路123号<br><span class="small">地铁2号线静安寺站步行5分钟</span></p>
+                </div>
+                
+                <div class="contact-item">
+                    <h3>📞 电话</h3>
+                    <p>138-8888-8888<br><span class="small">预约优先，建议提前致电</span></p>
+                </div>
+                
+                <div class="contact-item">
+                    <h3>⏰ 营业时间</h3>
+                    <p>周二至周日 10:00 - 20:00<br>周一休息</p>
+                </div>
+                
+                <div class="contact-item">
+                    <h3>💬 微信</h3>
+                    <p>qingsi_hair<br><span class="small">或扫描下方二维码</span></p>
+                    <div style="width: 120px; height: 120px; background: #e8e0d5; margin: 1rem 0; display: flex; align-items: center; justify-content: center; color: #b69b7c;">二维码</div>
+                </div>
+                
+                <div class="contact-item">
+                    <h3>📱 社交媒体</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📕</a>
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📸</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="map-placeholder">
+                    地图位置示意
+                </div>
+                <p style="color: #999; font-size: 0.8rem; margin-top: 0.5rem;">* 点击地图可打开导航</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        © 2026 青丝 · 质感剪发 · 预约制工作室
+    </footer>
+</body>
+</html>

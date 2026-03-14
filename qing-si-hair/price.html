@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>价格 · 青丝</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .price-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .price-category {
+            margin-bottom: 3rem;
+        }
+        
+        .category-title {
+            font-size: 1.3rem;
+            font-weight: 400;
+            color: #b69b7c;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .price-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding: 1rem 0;
+            border-bottom: 1px dashed #f0eeea;
+        }
+        
+        .price-item:last-child {
+            border-bottom: none;
+        }
+        
+        .service-info {
+            flex: 1;
+        }
+        
+        .service-name {
+            font-weight: 500;
+            margin-bottom: 0.2rem;
+        }
+        
+        .service-desc {
+            font-size: 0.8rem;
+            color: #999;
+        }
+        
+        .service-price {
+            font-size: 1.3rem;
+            font-weight: 400;
+            color: #b69b7c;
+        }
+        
+        .service-price small {
+            font-size: 0.8rem;
+            color: #ccc;
+            font-weight: 300;
+        }
+        
+        .notice {
+            background: #f9f5f0;
+            padding: 2rem;
+            border-radius: 16px;
+            margin: 3rem 0;
+        }
+        
+        .notice h3 {
+            font-weight: 400;
+            margin-bottom: 1rem;
+            color: #b69b7c;
+        }
+        
+        .notice p {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">青<span>丝</span></a>
+            <div class="nav-links">
+                <a href="index.html">首页</a>
+                <a href="works.html">作品</a>
+                <a href="price.html" class="active">价格</a>
+                <a href="booking.html">预约</a>
+                <a href="contact.html">联系</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h1 class="page-title">服务价格</h1>
+        <div class="page-subtitle">PRICE LIST</div>
+        
+        <div class="price-container">
+            <div class="price-category">
+                <div class="category-title">剪发</div>
+                <div class="price-item">
+                    <div class="service-info">
+                        <div class="service-name">洗剪吹 · 设计师</div>
+                        <div class="service-desc">包含洗发、剪发、造型</div>
+                    </div>
+                    <div class="service-price">¥168</div>
+                </div>
+                <div class="price-item">
+                    <div class="service-info">
+                        <div class="service-name">洗剪吹 · 总监</div>
+                        <div class="service-desc">十年以上经验总监服务</div>
+                    </div>
+                    <div class="service-price">¥268</div>
+                </div>
+                <div class="price-item">
+                    <div class="service-info">
+                        <div class="service-name">儿童剪发</div>
+                        <div class="service-desc">12岁以下</div>
+                    </div>
+                    <div class="service-price">¥128</div>
+                </div>
+            </div>
+            
+            <div class="price-category">
+                <div class="category-title">染发</div>
+                <div class="price-item">
+                    <div class="service-info">
+                        <div class="service-name">全染 · 短发</div>
+                        <div class="service-desc">含剪裁造型</div>
+                    </div>
+                    <div class="service-price">¥398 <small>起</small></div>
+                </div>
+                <div class="price-item">
+                    <div class="service-info">
+                        <div class="service-name">全染 · 中长发</div>
+                        <div class="service-desc">含剪裁造型</div>
+                    </div>
+                    <div class="service-price">¥498 <small>起</small></div>
+                </div>
+                <div class="price-item">
+                    <div class="service-info">
+                        <div class="service-name">挑染/渐变</div>
+                        <div class="service-desc">按设计复杂度定价</div>
+                    </div>
+                    <div class="service-price">¥598 <small>起</small></div>
+                </div>
+            </div>
+            
+            <div class="price-category">
+                <div class="category-title">烫发</div>
+                <div class="price-item">
+                    <div class="service-info">
+                        <div class="service-name">纹理烫 · 短发</div>
+                        <div class="service-desc">热烫，含剪裁</div>
+                    </div>
+                    <div class="service-price">¥598 <small>起</small></div>
+                </div>
+                <div class="price-item">
+                    <div class="service-info">
+                        <div class="service-name">造型烫 · 中长发</div>
+                        <div class="service-desc">冷烫/热烫可选</div>
+                    </div>
+                    <div class="service-price">¥698 <small>起</small></div>
+                </div>
+            </div>
+            
+            <div class="notice">
+                <h3>📌 预约须知</h3>
+                <p>· 所有服务均采用预约制，请提前一天预约</p>
+                <p>· 价格仅供参考，具体以店内沟通为准</p>
+                <p>· 首次体验享9折优惠</p>
+            </div>
+            
+            <div style="text-align: center; margin: 3rem 0;">
+                <a href="booking.html" class="btn">立即预约</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        © 2026 青丝 · 质感剪发 · 预约制工作室
+    </footer>
+</body>
+</html>
